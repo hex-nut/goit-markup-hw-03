@@ -26,7 +26,6 @@ header .container{
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    margin-left: 135px;
 }
 .nav-links a{
     color: #212121;
@@ -97,9 +96,8 @@ h1{
 .container .advantages{
     display: flex;
 }
-.advantages{
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
+.advantages{ 
+   padding: 0;
 }
 .advantages h3{
     color: #212121;
@@ -203,6 +201,18 @@ margin-right: 30px;
     letter-spacing: 0.03em;
     text-align: center;
 }
+.container .button-list{
+    justify-content: center;
+   
+}
+.button-list{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+ .button-list li{ 
+    margin-right: 8px;
+}
 button{
     background-color: #F5F4FA;
     color: #212121;
@@ -213,10 +223,32 @@ button{
     line-height: 26px;
     letter-spacing: 0.03em;
     text-align: center;
+    border: none;
+    padding: 6px 22px;
+    position: relative;
 }
-button:hover{
+button:hover{ 
     color: #FFFFFF;
     background-color: #2196F3;
+}
+.product-items{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    padding: 0;
+}
+.product-items li{
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.product-items img{
+    width: 370px;
+    height: 294px;
 }
 .product-items h3{
     color: #212121;
@@ -227,6 +259,7 @@ button:hover{
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
+    margin: 20px 24px 4px;
 }
 .product-items p{
     color: #757575;
@@ -237,6 +270,7 @@ button:hover{
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
+    margin: 0 24px 4px;
 }
 footer{
     background-color: #2F303A;
@@ -282,4 +316,5 @@ address{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    border: 1px solid red;
 }
