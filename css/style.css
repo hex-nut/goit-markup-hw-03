@@ -299,7 +299,7 @@ address{
     margin-top: 9px;
 }
 .contact-links-down{
-    margin: 0;
+    margin: 0 0;
     padding-left: 0;
 }
 .contact-links-down a{
@@ -317,3 +317,4 @@ address{
     padding: 0 15px;
     margin: 0 auto;
 }
+
