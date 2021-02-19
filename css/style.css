@@ -1,3 +1,4 @@
+
 .logo {
     color: #212121;
     font-family: Raleway;
@@ -17,16 +18,38 @@
 li{
     list-style-type: none;
 }
-header .container,
+ul{
+    margin: 0;
+}
+h1{
+    margin: 0;
+    margin-bottom: 30px;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+.header-nav,
 .nav-links,
 .contact-links{
-    display: inline-flex;
-}
-header .container{
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding-top: 24px;
 }
+header{
+    border-bottom: 1px solid #ECECEC;
+    padding: 24px 0 25px;
+}
+.header-nav>a{
+    margin-right: 93px;
+}
+.nav-links{
+    padding: 0;
+}
+/* .header-nav{ 
+    justify-content:space-between;
+}*/
 .nav-links a{
     color: #212121;
     font-family: Roboto;
@@ -35,8 +58,12 @@ header .container{
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: left;
+}
+.nav-links li:not(:first-child){
     margin-left: 50px;
+}
+.nav-links{
+    margin: 0;
 }
 .nav-links a:hover {
     color: #2196F3;
@@ -44,6 +71,11 @@ header .container{
 a {
     text-decoration: none;
 }
+.contact-links{
+    padding: 0;
+    margin-left: auto;
+}
+
 .contact-links a{
     color: #757575;
     font-family: Roboto;
@@ -52,7 +84,7 @@ a {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: left;
+    
 }
 .contact-links li:last-child{
     margin-left: 50px;
@@ -90,14 +122,17 @@ h1{
     letter-spacing: 0.06em;
     text-align: center;
     padding: 10px 32px;
-    margin-top: 30px;
     border-radius: 4px;
+}
+.advantages-section{
+    padding: 94px 30px;
 }
 .container .advantages{
     display: flex;
 }
 .advantages{ 
    padding: 0;
+   justify-content: space-between;
 }
 .advantages h3{
     color: #212121;
@@ -111,7 +146,6 @@ h1{
     text-transform: uppercase;
     width: 270px;
     height: 17px;
-    margin: 94px 30px 0 0;
     
 }
 .advantages p{
@@ -124,7 +158,7 @@ h1{
     letter-spacing: 0.03em;
     text-align: left;
     width: 270px;
-    margin: 10px 30px 0 0;
+    margin: 10px 0 0;
 }
 h2{
     font-family: Roboto;
@@ -135,15 +169,16 @@ h2{
     letter-spacing: 0.03em;
     text-align: center;
 }
+.presentation-section{
+   padding: 94px 0; 
+}
 .container .presentation{
     display: flex;
-    padding-bottom: 94px;
 }
 .presentation{
     padding-left: 0;
 }
 .presentation-title{
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .presentation li{
@@ -156,7 +191,7 @@ h2{
 }
 .our-team-section{
     background-color: #F5F4FA;
-    padding-top: 94px;
+    padding: 94px;
 }
 .our-team{
     margin: 0;
@@ -171,13 +206,15 @@ margin-right: 30px;
 }
 .our-team li{
     background-color: #FFFFFF;
-    margin-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .our-team img{
     width: 270px;
     height: 260px;
+}
+.worker{
+    padding: 30px 0;
 }
 .our-team h3{
     color: #212121;
@@ -188,7 +225,6 @@ margin-right: 30px;
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .our-team p{
@@ -200,14 +236,16 @@ margin-right: 30px;
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
+    margin: 0;
+}
+.portfolio-section{
+    padding: 94px 0;
 }
 .container .button-list{
-    justify-content: center;
-   
+    justify-content: center; 
 }
 .button-list{
     display: flex;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
  .button-list li{ 
@@ -232,23 +270,27 @@ button:hover{
     background-color: #2196F3;
 }
 .product-items{
-    display: inline-flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 64px;
+    /* justify-content: space-between; */
     padding: 0;
 }
 .product-items li{
     width: 370px;
     height: 404px;
-    margin-bottom: 30px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    margin: 0 29px 30px 0;
+}
+.product-items li:nth-child(3n){
+    margin: 0;
 }
 .product-items img{
-    width: 370px;
-    height: 294px;
+    width: 368px;
+}
+.item-info{
+    padding: 20px 24px 4px;
 }
 .product-items h3{
     color: #212121;
@@ -256,10 +298,9 @@ button:hover{
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
-    margin: 20px 24px 4px;
+    margin-bottom: 4px;
 }
 .product-items p{
     color: #757575;
@@ -267,10 +308,8 @@ button:hover{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
-    margin: 0 24px 4px;
 }
 footer{
     background-color: #2F303A;
@@ -314,7 +353,7 @@ address{
 }
 .container{
     width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
