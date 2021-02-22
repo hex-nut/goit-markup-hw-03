@@ -169,9 +169,6 @@ h2{
     letter-spacing: 0.03em;
     text-align: center;
 }
-.presentation-section{
-   padding: 94px 0; 
-}
 .container .presentation{
     display: flex;
 }
@@ -191,7 +188,7 @@ h2{
 }
 .our-team-section{
     background-color: #F5F4FA;
-    padding: 94px;
+    padding: 94px 0;
 }
 .our-team{
     margin: 0;
@@ -310,6 +307,7 @@ button:hover{
     font-weight: 400;
     letter-spacing: 0.03em;
     text-align: left;
+    margin: 0;
 }
 footer{
     background-color: #2F303A;
